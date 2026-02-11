@@ -1,0 +1,54 @@
+site_name: Elementos Finitos
+site_description: Formulaciones y desarrollos numéricos
+site_author: Tu Nombre
+
+theme:
+  name: material
+  palette:
+    scheme: default
+    primary: blue grey
+    accent: indigo
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - content.code.copy
+
+nav:
+  - Inicio: index.md
+
+  - Elementos 1D:
+      - Barra: 1D/barra.md
+      - Viga: 1D/viga.md
+
+  - Elementos 2D:
+      - Triángulos:
+          - CST: 2D/triangulo/CST.md
+          - OPT: 2D/triangulo/OPT.md
+      - Cuadriláteros:
+          - Q4: 2D/cuadrilatero/Q4.md
+          - DKQ: 2D/cuadrilatero/DKQ.md
+
+  - Shells:
+      - Corrotacional: shells/corrotacional.md
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.highlight
+  - pymdownx.superfences
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+extra:
+  mathjax:
+    tex:
+      inlineMath:
+        - ['$', '$']
+      displayMath:
+        - ['$$', '$$']
