@@ -5,9 +5,23 @@ site_author: Tu Nombre
 theme:
   name: material
   palette:
-    scheme: default
-    primary: blue grey
-    accent: indigo
+
+    # Modo claro
+    - scheme: default
+      primary: blue grey
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Cambiar a modo oscuro
+
+    # Modo oscuro
+    - scheme: slate
+      primary: blue grey
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Cambiar a modo claro
+
   features:
     - navigation.tabs
     - navigation.sections
